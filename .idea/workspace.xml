@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62fbee76-b5bc-4a67-942e-de6f962a2dc9" name="Changes" comment="added hello 2">
+    <list default="true" id="62fbee76-b5bc-4a67-942e-de6f962a2dc9" name="Changes" comment="added hello 2&#10;2.5 Итоги пройденных тем. Проверьте себя&#10;1+2+3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_learning.py" afterDir="false" />
     </list>
@@ -187,13 +187,22 @@
       <option name="project" value="LOCAL" />
       <updated>1760034588517</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added hello 2&#10;2.5 Итоги пройденных тем. Проверьте себя&#10;1+2+3">
+      <option name="closed" value="true" />
+      <created>1760037893242</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1760037893242</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created 1st python file" />
     <MESSAGE value="added hello" />
     <MESSAGE value="added hello 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="added hello 2" />
+    <MESSAGE value="added hello 2&#10;2.5 Итоги пройденных тем. Проверьте себя&#10;1+2+3" />
+    <option name="LAST_COMMIT_MESSAGE" value="added hello 2&#10;2.5 Итоги пройденных тем. Проверьте себя&#10;1+2+3" />
   </component>
 </project>
