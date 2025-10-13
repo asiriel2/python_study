@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62fbee76-b5bc-4a67-942e-de6f962a2dc9" name="Changes" comment="added hello 2&#10;2.5 Итоги пройденных тем. Проверьте себя&#10;1+2+3">
+    <list default="true" id="62fbee76-b5bc-4a67-942e-de6f962a2dc9" name="Changes" comment="added hello 2&#10;1-2 пройдет и практические работы сделаны&#10;вопрос в 5 и 7 практической задаче">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_learning.py" afterDir="false" />
     </list>
@@ -195,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760037893242</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added hello 2&#10;1-2 пройдет и практические работы сделаны&#10;вопрос в 5 и 7 практической задаче">
+      <option name="closed" value="true" />
+      <created>1760179247079</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1760179247079</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -203,6 +211,7 @@
     <MESSAGE value="added hello" />
     <MESSAGE value="added hello 2" />
     <MESSAGE value="added hello 2&#10;2.5 Итоги пройденных тем. Проверьте себя&#10;1+2+3" />
-    <option name="LAST_COMMIT_MESSAGE" value="added hello 2&#10;2.5 Итоги пройденных тем. Проверьте себя&#10;1+2+3" />
+    <MESSAGE value="added hello 2&#10;1-2 пройдет и практические работы сделаны&#10;вопрос в 5 и 7 практической задаче" />
+    <option name="LAST_COMMIT_MESSAGE" value="added hello 2&#10;1-2 пройдет и практические работы сделаны&#10;вопрос в 5 и 7 практической задаче" />
   </component>
 </project>
