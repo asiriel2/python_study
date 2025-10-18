@@ -35,6 +35,9 @@
     &quot;accountId&quot;: &quot;7ff566db-461a-41e7-9db3-f619778790da&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -203,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760179247079</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added hello 2&#10;1-2 пройдет и практические работы сделаны&#10;вопрос в 5 и 7 практической задаче">
+      <option name="closed" value="true" />
+      <created>1760379243670</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1760379243670</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

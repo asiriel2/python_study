@@ -95,7 +95,10 @@
 #
 # user = input ( 'your name: ')
 # new_file  = input ( 'name file: ')
-
+from bisect import insort_right
+from queue import PriorityQueue
+from selectors import SelectSelector
+from xml.dom.minidom import ProcessingInstruction
 
 # =================================================================
 # print(3**5)
@@ -224,29 +227,417 @@
 
 # a = int(input('Введите первое число: '))
 # b = int(input('Введите второе число: '))
-a = 1 # 5
-b = 2 # 1
-c = 3 # 2
-d = 4 # 3
-e = 5 # 4
-print(a, b, c, d, e)
-a=1+2+3+4+5
-b=a-b-c-d-e
-c=a-b-c-d-e
-d=a-b-c-d-e
-e=a-b-c-d-e
-a=
-print(a, b, c, d, e)
-a=1+2+3+4+5
+# a = 1 # 5
+# b = 2 # 1
+# c = 3 # 2
+# d = 4 # 3
+# e = 5 # 4
+# print(a, b, c, d, e)
+# a=1+2+3+4+5
+# b=a-b-c-d-e
+# c=a-b-c-d-e
+# d=a-b-c-d-e
+# e=a-b-c-d-e
+# a=
+# print(a, b, c, d, e)
+# a=1+2+3+4+5
+
+
+
+# a = 6
+# b = 2
+# c = 0
+# if b < a:
+#     c = a * b
+# print(c)
+
+
+# money = int(input('введите сумму: '))
+# if money >= 40000:
+#     money -= 40000
+#     print('курс успешно приобритен:')
+# print( 'Хорошего дня!')
+
+# son  = 5
+# father = 5
+# if son  == father :
+#     print("Угадал")
+# print('Конец игры')
+#
+# son  = 3
+# father = 5
+# if son  != father :
+#     print("Не угадал")
+# print('Конец игры')
+
+# money = int(input('введите сумму: '))
+# if money >= 1000:
+#     money -= 1000
+#     print('курс успешно приобритен:')
+# else:
+#
+#     print('Не хватает денег на счёте:')
+# print( 'Хорошего дня!')
+# print('ostatok  deneg:', money)
+
+# first_number = 10
+# second_number = 20
+# sum_number = 40
+# if sum_number == second_number + first_number:
+#     print('Ответ верный!')
+# else:#
+#     print('Ответ неверный!')
+
+
+# son  = 5
+# father = 3
+# if son  == father :
+#     print("Угадал")
+# else:
+#     print("Не угадал")
+# print('Конец игры')
+
+# a = int(input("На улице идёт дождь? 1 если да, 2 если нет:  "))
+# if 1 == a:
+#     print('Пошёл дождь. Возьмите зонтик!')
+# else:
+#     print('Дождя нет!')
+
+
+
+# a= int(input("Введите количество баллов по русскому языку: "))
+# b= int(input("Введите количество баллов по математике: "))
+# c= int(input("Введите количество баллов по информатике: "))
+
+# a=90
+# b=90
+# c=30
+# d=a+b+c
+# if d >= 270:
+#     print('Поздравляю, ты поступил на бюджет!')
+# else:
+#     print('К сожалению, ты не прошёл на бюджет.')
+
+# 4
+# a= int(input("сумма первого товара: "))
+# b= int(input("сумма второго товара: "))
+# c= int(input("сумма третьего товара: "))
+# d=a+b+c
+# if d >= 10000:
+#     summa=d-(d/100*10)
+#     print('Поздравляю, тебе хватит!:' , summa)
+# else:
+#     print('давай заново')
+
+# 5
+# a=int(input("Enter a number"))
+# if a>0:
+#     print("Вы ввели: ", a, 'ответ', a)
+# else:
+#     suma = a - a - a
+#     print("Вы ввели: ",  a, 'ответ', suma)
+# 6
+# klient = 3
+# vladeles = 4
+# summa = 7
+# print('Кубик Кости:',  klient)
+# print('Кубик владельца:' ,vladeles)
+# print('Сумма: ',summa)
+# selector = SelectSelector()
+# if klient <= vladeles:
+#     print('Владелец платит:')
+# else:
+#     print('Игрок платит:')
+# print('Игра окончена')
+
+
+# 7
+# chasi = int(input("Введите отработанные часы: "))
+# kredit =int(input('Введите остаток по кредиту: '))
+# eda = int(input('Введите траты на еду:'))
+# chasi = 80
+# kredit = 1000
+# eda = 5000
+# koshel = kredit + eda
+# summa = 200*chasi/(2**3)+chasi
+# if summa >= koshel:
+#     print('Часов хватает. Можно отдохнуть')
+# else:
+#     print('Часов не хватает. Придётся работать больше!')
+
+
+# # 8
+# a= int(input("Введите первое число: "))
+# b= int(input("Введите второе число: "))
+# c= int(input("Введите третье число: "))
+# if a>b and a>c:
+#     print('первое число большое')
+# elif b>a and b>c:
+#     print('второе число большое')
+# elif c>a and c>b:
+#     print('третье число большое')
+
+
+
+# 555555
+
+# x = 6
+# y = 5
+# if x>y:
+#     print('X больше Y')
+# if x<y:
+#     print('X меньше Y')
+# if x==y:
+#     print('X равен Y')
+#
+#
+# bank = int(input('введите сумму: '))
+# if bank >= 75000:
+#     bank -= 75000
+# if bank <= 5000:
+#     bank += 1000
+#     print('Сделана скид-ка')
+# print('курс успешно приобритен:')
+# print('Остаток:', + bank)
+# print( 'Хорошего дня!')
+
+
+# money = int(input('введите деньги на покупку:')
+# cheese_price = int(input('введите стоимость сыра:')
+# ice_cream_price = int(input('введите стоимость мороженого:')
+# money = 100
+# cheese_price = 80
+# ice_cream_price = 20
+# posle_sir = money - cheese_price
+# if  money >= cheese_price:
+#     print('На сыр денег хватило')
+# else:
+#     print('Денег не хватило даже на сыр!')
+# if posle_sir < ice_cream_price:
+#     print('Денег маловато')
+# else:
+#     print('И на мороженое тоже!»')
+
+
+
+# x = 2
+# y = 2
+# if x>y:
+#     print('X больше Y')
+# elif x<y:
+#     print('X меньше Y')
+# else:
+#     print('X равен Y')
+
+
+#
+# doxod = int(input('какой у вас доход?:'))
+#
+# if doxod < 10000:
+#     print('налог 13% и составляет: ', + (doxod/100*13))
+# elif doxod >= 10000 and doxod <= 50000 :
+#     print('налог 20% и составляет: ', + (doxod/100*20))
+# else:
+#     print('налог 30% и составляет: ', + (doxod/100*30))
+
+
+# first = 2
+# second = 2
+# third = 1
+# if first == second :
+#     print("третье легче")
+# elif first == third :
+#     print("вторая легче")
+# else :
+#     print("первая легче")
+
+
+#
+# year = 2022
+# number_of_speeds = 23
+# if  year >= 2018 and number_of_speeds>= 24:
+#     print('велик подойдет')
+# else :
+#     print ('нету')
+
+#
+# scores = 280
+# medal = 0
+# if  scores >= 280 and medal >=1:
+#     print('Поздравляем! Ты поступил!')
+# else :
+#     print ('К сожалению, ты не прошёл в наш университет.')
+
+#
+# temperature = int(input("введите градус температуры: "))
+# # temperature = 110
+# if  temperature >= 0 and temperature <= 100:
+#     print('Температура в пределах нормы!')
+# else :
+#     print ('Опасность! ')
+
+# level = int(input("введите кол-во опыта: "))
+# level = 6300
+# if level >= 0  and  level <= 999:
+#     print('у вас первый уровень' )
+# if level >= 1000 and level <= 2500:
+#     print('у вас второй уровень')
+# if level >= 2500 and  level <= 5000:
+#     print('у вас третий уровень')
+# if level >= 5000:
+#     print('у вас четвертый уровень')
+# print ('вы лучший!')
+
+
+# ball = 290
+# status =11
+# if ball >= 290:
+#     print('Поздравляем! Ты поступил!')
+#     if status <= 10:
+#         print('Бонусом вам будет начисляться стипендия.')
+#     if status >= 11:
+#         print('Но вам не хватило баллов для стипендии.')
+# else:
+#     print('потом повезет!')
+#
+#
+# Задача 4. Опять двойка
+
+# rating = int(input('Что получил по математике? '))
+# if rating <=3:
+#  print('Плохо. Марш учиться!')
+# if rating <= 5:
+#  print('Молодец! Можешь отдохнуть.')
+
+# 6
+# m2 = 100
+# cena =7
+# if (m2 >=100 and cena <=10) or (m2 >=80 and cena <=7):
+#     print('квартира подходит')
+# else:
+#     print('квартира не подходит')
+
+
+# Задача 7. Почта
+# Что нужно сделать
+# time = int(input('время получение: '))
+# time = 9
+# if  time >=0 and time <=7 or time >=14 and time <=15 or time >= 10 and time <= 12 or time >= 18 and time <= 20 or  time >= 22 and time <= 24 :
+#     print('No working')
+# else:
+#     print('working')
+
+
+# 2
+#
+# X=int(input('Введите значение X:'))
+# if  X>0:
+#     print('Y=',X-12 )
+# if X==0:
+#     print('Y=', 5)
+# if X<=0:
+#     print('Y=', X**2)
+
+
+# # 66666666666666666
+# 1
+# total=0
+# number = int(input('Введите число: '))
+# while number >=0:
+#     total += number
+#     print(total)
+#     number = int(input('Введите число: '))
+#     if number == 0:
+#         break
+# print(total)
+# print(number)
+
+# 2
+# number = 7
+# total = 0
+# while number:
+#     total += number
+#     print(total)
+#     if total == 98:
+#         break
+# print(total )
+
+
+# Задача 1. Бегать — это полезно
+#
+# gradus = 20
+# total = 0
+# while gradus:
+#     total += 20
+#     gradus -= 2
+#     print('длина', total )
+#     if gradus <=15 :
+#         break
+# print('градус', gradus)
+# print('растояние' , total+10 )
 
 
 
 
+    #  Задача 2.
+# number = 34566432
+# nums_total = 0
+# while  number:
+#     remaider = number % 10
+#     if remaider == 5:
+#         print("«Обнаружен раз-рыв» 5")
+#         break
+#     nums_total += remaider
+#     number //=10
+# print('сумма цифр:', nums_total)
 
 
 
+# Задача 3. Начальная школа
+# Авторы учебника по математике для второклассников очень любят всё усложнять. Например, отрицатель-ные числа изучают только в пятом классе,
+# а они всё норовят дать задачки на них во втором классе. Нам нуж-на программа, которая будет проверять,
+# что в учебнике для второклашек не будет отрицательных чисел.
+# Напишите программу, которая считывает числа до тех пор, пока не встретит отрицательное число.
+# При по-явлении отрицательного числа программа завершается и показывает количество введенных чисел. Поду-майте, обязательно ли здесь использовать оператор break.
+
+# total = int(input("число "))
+# while total:
+#     total = int(input("число "))
+#     print('длина', total )
+#     if total <=0:
+#         break
+# print('растояние' , total )
 
 
+# limit = 5000
+# balance = 13000
+# zero = 0
+# win = 500
+# expense=0
+# while balance > limit:
+#     expense = int(input('кидайте кубик:'))
+#     if  expense ==3:
+#         balance -= balance
+#     print('у вас в балансе:', balance)
+#     elif :, balance += 500
+# print('Вы проиграли всё!:' , zero)
+# print('у вас в балансе:', balance )
+#
+#
+#
+#
+# принятие ставки
+# money = 10000
+# # cube = 1-6
+# cube = 0
+# int(input('сделайте ставку: '))
+# print('Ставки приняты, ставок больше нет!')
+# if cube == 3:
+#      No_win = 0
+# elif
+#     cube <=6:
+#      No_win = 1
+# print ('На счету:', money)
 
 
 
